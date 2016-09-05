@@ -9,6 +9,7 @@ describe('Homepage Tests', function() {
   })
 
   it('should render title', function(done){
+    this.timeout(5000);
     browser.visit('/', function() {
       browser.assert.text('h1', 'A test page for ReactJS');
       done();
